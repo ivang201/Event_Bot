@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    telegram_id INTEGER UNIQUE NOT NULL,
+    is_authorized BOOLEAN DEFAULT FALSE
+);
+
+CREATE TABLE IF NOT EXISTS auth_codes (
+    id SERIAL PRIMARY KEY,
+    code VARCHAR(10) UNIQUE NOT NULL
+);
+
+INSERT INTO auth_codes (code) VALUES ('1234'), ('5678');

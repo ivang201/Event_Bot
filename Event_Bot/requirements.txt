@@ -1,0 +1,6 @@
+aiogram==3.7.0
+aiosmtplib
+pydantic-settings
+asyncpg
+sqlalchemy[asyncpg]
+psycopg2-binary
